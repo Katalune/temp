@@ -10,3 +10,4 @@ jobs:
       run: |
         python3 hello.py
         pip3 install --user django
+        python3 test_sum.py
