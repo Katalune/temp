@@ -1,0 +1,12 @@
+name: Dummy Action
+on: push
+
+jobs:
+  run_dummy_action:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run dummy script
+      run: |
+        python3 hello.py
+        pip3 install --user django
